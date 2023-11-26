@@ -1,6 +1,10 @@
 function ErrorPage() {
     return (
-        <h1>Hello World</h1>
+        <>
+            <h1>Oops. That page doesn&apos;t exist.</h1>
+            <br />
+            <h2>Please navigate home.</h2>
+        </>
     );
 }
 
