@@ -4,7 +4,6 @@
 AccessiBible is a living and breathing accessibility bible for web developers, providing a centralized reference for learning about web accessibility. The repository includes:
 
 - `components/`: React components for easy integration into projects.
-- `demonstrations/`: Webpages demonstrating accessibility violations.
 - `resources/`: Information and links for further learning.
 
 All other files (including those in `src` and `public` are project files for the demonstrations application, which you can access by cloning the repository, installing dependencies and running the build scripts.
