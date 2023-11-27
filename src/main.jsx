@@ -8,6 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomeLink from './demo_components/HomeLink.jsx'
+import Keyboard from './demo_components/pages/Keyboard.jsx';
 
 // Declare routes
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     element: <App/>,
     errorElement: <ErrorPage/>
   },
+  {
+    path: "/keyboard",
+    element: <Keyboard/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

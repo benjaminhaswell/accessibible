@@ -6,7 +6,8 @@ export default {
   ],
   theme: {
     colors: {
-      'bgGray' : '#dfdfdf'
+      'bgGray' : '#f3f3f3',
+      'white' : '#FFFFFF'
     },
     extend: {},
   },

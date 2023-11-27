@@ -31,7 +31,8 @@ h1 {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #dfdfdf;
+    /* set as bgGray in tailwind config */
+    background-color: #f3f3f3;
   }
 }
 
