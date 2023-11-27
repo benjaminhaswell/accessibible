@@ -4,7 +4,7 @@ function PageCard({ name, iconPath, iconAlt }) {
 
     return (
         <>
-            <div className="bg-white rounded-lg shadow-lg p-6 mx-auto max-w-xs">
+            <div className="bg-white rounded-lg shadow-lg p-6 mx-auto w-auto h-48">
                 <img src={iconPath} alt={iconAlt}></img>
                 {/* Page name */}
                 <h3 className="text-xl font-semibold mb-2 text-center">{name}</h3>
