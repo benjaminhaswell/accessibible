@@ -6,8 +6,10 @@ export default {
   ],
   theme: {
     colors: {
-      'bgGray' : '#f3f3f3',
-      'white' : '#FFFFFF'
+      'bgGray' : '#f8f8f8',
+      'white' : '#FFFFFF',
+      'purple' : '#7c4aff',
+      'logo-purple': '#8d61ff'
     },
     extend: {},
   },
