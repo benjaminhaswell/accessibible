@@ -1,6 +1,34 @@
 import SideBar from "../SideBar";
+import { useState } from 'react';
 
 function Keyboard() {
+
+    const [showMessage1, setShowMessage1] = useState(false);
+    const [showMessage2, setShowMessage2] = useState(false);
+
+
+    const handleClick1 = () => {
+        setShowMessage1(true);
+
+        // Hide the message after a short delay (you can adjust the duration)
+        setTimeout(() => {
+            setShowMessage1(false);
+        }, 1000);
+    };
+
+    const handleClick2 = () => {
+        setShowMessage2(true);
+
+        // Hide the message after a short delay (you can adjust the duration)
+        setTimeout(() => {
+            setShowMessage2(false);
+        }, 1000);
+    };
+
+    function goToSection() {
+        window.location.hash = 'demo2';
+    }
+
     return (
 
         <>
@@ -46,21 +74,21 @@ function Keyboard() {
                         Using those controls only, navigate through this interface:
                     </p>
 
-                    {/* Demo */}
-                    <div className="bg-darkerGray p-6">
+                    {/* Working Demo */}
+                    <div className="bg-darkerGray p-6" id="demo1">
                         <nav className="mb-8">
                             <ul className="flex space-x-4">
                                 <li>
-                                    <a href="#" className="hover:text-gray-300 outline-purple outline-8">Home</a>
+                                    <a href="#demo1" className="outline-purple">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="hover:text-gray-300 outline-purple">About</a>
+                                    <a href="#demo1" className="outline-purple">About</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="hover:text-gray-300 outline-purple">Services</a>
+                                    <a href="#demo1" className="outline-purple">Services</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="hover:text-gray-300 outline-purple">Contact</a>
+                                    <a href="#demo1" className="outline-purple">Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -75,16 +103,90 @@ function Keyboard() {
                         <select
                             name="fruits"
                             id="fruits"
-                            className="block appearance-none w-full outline-purple py-2 px-4 rounded"
+                            className="block w-full outline-purple py-2 px-4 rounded"
                         >
                             <option value="volvo">Apple</option>
                             <option value="saab">Banana</option>
                             <option value="mercedes">Orange</option>
                             <option value="audi">Pineapple</option>
                         </select>
-                        <button className="text-white px-4 py-2 rounded bg-purple mt-4">Click me!</button>
+                        <button onClick={handleClick1}
+                            className="text-white px-4 py-2 rounded bg-purple mt-4">Click me!</button>
+                        {showMessage1 && (
+                            <span
+                                className="text-purple ml-4"
+                                onAnimationEnd={() => setShowMessage1(false)}
+                            >
+                                Clicked!
+                            </span>
+                        )}
 
                     </div>
+
+                    <p className="my-8">Now try navigating through this seemingly similar interface:</p>
+
+                    {/* Not Working Demo */}
+                    <div className="bg-darkerGray p-6" id="demo2">
+                        <nav className="mb-8">
+                            <ul className="flex space-x-4">
+                                <li>
+                                    <span href="#demo2" onClick={goToSection} className="cursor-pointer hover:text-purple">Home</span>
+                                </li>
+                                <li>
+                                    <span href="#demo2" onClick={goToSection} className="cursor-pointer hover:text-purple">About</span>
+                                </li>
+                                <li>
+                                    <span href="#demo2" onClick={goToSection} className="cursor-pointer hover:text-purple">Services</span>
+                                </li>
+                                <li>
+                                    <span href="#demo2" onClick={goToSection} className="cursor-pointer hover:text-purple">Contact</span>
+                                </li>
+                            </ul>
+                        </nav>
+                        <label htmlFor="username" className="block">Username:</label>
+                        <input
+                            type="text"
+                            id="username"
+                            className="text-black px-4 py-2 rounded outline-purple"
+                        />
+                        <br />
+                        <label htmlFor="fruits">Favorite fruit:</label>
+                        <select
+                            name="fruits"
+                            id="fruits"
+                            className="block w-full outline-purple py-2 px-4 rounded"
+                        >
+                            <option value="volvo">Apple</option>
+                            <option value="saab">Banana</option>
+                            <option value="mercedes">Orange</option>
+                            <option value="audi">Pineapple</option>
+                        </select>
+                        <div className="flex flex-row items-center">
+
+                        <div
+                            onClick={handleClick2}
+                            className="text-white px-4 py-2 rounded bg-purple mt-4 cursor-pointer w-28"
+                            role="button"
+                        >
+                            Click me!
+                        </div>
+                        {showMessage2 && (
+                            <span
+                                className="text-purple ml-4 mt-4"
+                                onAnimationEnd={() => setShowMessage2(false)}
+                            >
+                                Clicked!
+                            </span>
+                        )}
+
+                        </div>
+                        
+
+                    </div>
+
+                    {/* More description */}
+                    <p className="my-8">As you can see, these interfaces may appear practically identical, but one of them is completely keyboard inaccessible!</p>
+
                 </section>
             </div>
 
