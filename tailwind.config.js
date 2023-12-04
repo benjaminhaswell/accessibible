@@ -7,6 +7,7 @@ export default {
   theme: {
     colors: {
       'bgGray' : '#f8f8f8',
+      'darkerGray' : '#DEDEDE',
       'white' : '#FFFFFF',
       'purple' : '#7c4aff',
       'logo-purple': '#8d61ff'
