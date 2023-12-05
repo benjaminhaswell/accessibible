@@ -75,7 +75,7 @@ function Keyboard() {
                     </p>
 
                     {/* Working Demo */}
-                    <div className="bg-darkerGray p-6" id="demo1">
+                    <div className="bg-darkerGray p-6 rounded-md" id="demo1">
                         <nav className="mb-8">
                             <ul className="flex space-x-4">
                                 <li>
@@ -126,7 +126,7 @@ function Keyboard() {
                     <p className="my-8">Now try navigating through this seemingly similar interface:</p>
 
                     {/* Not Working Demo */}
-                    <div className="bg-darkerGray p-6" id="demo2">
+                    <div className="bg-darkerGray p-6 rounded-md" id="demo2">
                         <nav className="mb-8">
                             <ul className="flex space-x-4">
                                 <li>
@@ -178,14 +178,17 @@ function Keyboard() {
                                 Clicked!
                             </span>
                         )}
-
                         </div>
-                        
 
                     </div>
 
                     {/* More description */}
-                    <p className="my-8">As you can see, these interfaces may appear practically identical, but one of them is completely keyboard inaccessible!</p>
+                    <p className="my-8">As you can see, these interfaces may appear practically identical, 
+                    but one of them is completely keyboard inaccessible! The second interface&apos;s menus and
+                    button can&apos;t even be focused, since they are &lt;span&gt; and &lt;div&gt; elements, respectively.</p>
+
+                    <p className="my-8">You&apos;ll also notice that, when used with a mouse, the interface
+                    doesn&apos;t have any functional problems.</p>
 
                 </section>
             </div>

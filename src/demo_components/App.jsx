@@ -1,10 +1,14 @@
 import './App.css'
 import PageCard from './PageCard'
+import HomeLink from './HomeLink'
 
 function App() {
 
   return (
     <>
+
+<HomeLink/>
+
       {/* Text */}
       <div className="text-center mx-auto">
         <h1 className="mt-24">Welcome to Accessibible Demonstrations</h1>
