@@ -33,7 +33,7 @@ function Keyboard() {
 
         <>
 
-            <SideBar />
+            <SideBar activeLink={"keyboard"}/>
 
             <div className="text-left px-48">
                 <h1 className="mb-12">Keyboard Accessibility</h1>
