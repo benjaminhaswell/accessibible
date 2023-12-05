@@ -33,7 +33,7 @@ function Keyboard() {
 
         <>
 
-            <SideBar activeLink={"keyboard"}/>
+            <SideBar activeLink={"keyboard"} />
 
             <div className="text-left px-48">
                 <h1 className="mb-12">Keyboard Accessibility</h1>
@@ -163,32 +163,51 @@ function Keyboard() {
                         </select>
                         <div className="flex flex-row items-center">
 
-                        <div
-                            onClick={handleClick2}
-                            className="text-white px-4 py-2 rounded bg-purple mt-4 cursor-pointer w-28"
-                            role="button"
-                        >
-                            Click me!
-                        </div>
-                        {showMessage2 && (
-                            <span
-                                className="text-purple ml-4 mt-4"
-                                onAnimationEnd={() => setShowMessage2(false)}
+                            <div
+                                onClick={handleClick2}
+                                className="text-white px-4 py-2 rounded bg-purple mt-4 cursor-pointer w-28"
+                                role="button"
                             >
-                                Clicked!
-                            </span>
-                        )}
+                                Click me!
+                            </div>
+                            {showMessage2 && (
+                                <span
+                                    className="text-purple ml-4 mt-4"
+                                    onAnimationEnd={() => setShowMessage2(false)}
+                                >
+                                    Clicked!
+                                </span>
+                            )}
                         </div>
 
                     </div>
 
                     {/* More description */}
-                    <p className="my-8">As you can see, these interfaces may appear practically identical, 
-                    but one of them is completely keyboard inaccessible! The second interface&apos;s menus and
-                    button can&apos;t even be focused, since they are &lt;span&gt; and &lt;div&gt; elements, respectively.</p>
+                    <p className="my-8">As you can see, these interfaces may appear practically identical,
+                        but one of them is completely keyboard inaccessible! The second interface&apos;s menus and
+                        button can&apos;t even be focused, since they are &lt;span&gt; and &lt;div&gt; elements, respectively.</p>
 
                     <p className="my-8">You&apos;ll also notice that, when used with a mouse, the interface
-                    doesn&apos;t have any functional problems.</p>
+                        doesn&apos;t have any functional problems: you can freely select the menu items to navigate to their
+                        intended destinations, and the &apos;button&apos; still does something thanks to an onlick listener.</p>
+
+                    <p className="my-8">This kind of behavior can be found on many websites across the internet which don&apos;t take
+                        keyboard accessibility into account when designing their UI.</p>
+
+                    <p className="my-8">Generally, the more &apos;custom&apos; an element is, the less likely it is that the element will be
+                        keyboard accessible. There are ways to definitively make custom elements (like &lt;div&gt; buttons) keyboard accessible, most
+                        of the time involving the <strong>tabindex</strong> attribute which allows developers to alter the sequence of focusable elements
+                    </p>
+
+                    <p className="my-8">Try entering your browser developer tools and adding <strong>tabindex=&quot;0&quot;</strong> as an attribute to any the unfocusable
+                        elements above to demonstrate its functionality. These elements will still not function like their vanilla HTML counterparts - you would likely need
+                        event listeners to replicate the desired behavior - but that&apos;s one step in the right direction.</p>
+
+                    <a className="underline text-purple" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex">You can learn more about how tabindex here.</a>
+
+                    <p className="my-8">The bottom line is, instead of spending precious time building UI elements out of unintended tags, just use the boundless
+                        tags and their functionalities HTML already has built in! It will dramatically increase keyboard accessibility, save you
+                        time, and improve your skills as a developer in the long run.</p>
 
                 </section>
             </div>
