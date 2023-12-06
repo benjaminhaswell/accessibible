@@ -29,55 +29,37 @@ function ColorContrast() {
                     <div className="bg-darkerGray p-6 rounded-md">
                         <h2 className="text-center font-bold">This text has a color contrast ratio of 9.37:1</h2>
                     </div>
+                    <br />
+
+                    <div className="bg-purple p-6 rounded-md">
+                        <h2 className="text-center font-bold">This text has a color contrast ratio of 2.57:1</h2>
+                    </div>
+
+                    <p className="my-8">When you take into account people with visual impairments, contrast ratio becomes
+                    significantly more important.</p>
+
+                    <p className="my-8">Here are those same UI elements again, this time through the lens of somebody
+                    with tritanopia:</p>
 
                     <div className="bg-darkerGray p-6 rounded-md">
-                        <h2 className="text-center font-bold">This text has a color contrast ratio of 9.37:1</h2>
+                        <h2 className="text-center text-tri-text font-bold">This text has a color contrast ratio of 9.37:1</h2>
+                    </div>
+                    <br />
+
+                    <div className="bg-tri-purple p-6 rounded-md">
+                        <h2 className="text-center text-tri-text font-bold">This text has a color contrast ratio of 2.57:1</h2>
                     </div>
 
-                    <p className="my-8">Here are some key considerations for implementing effective color contrast:</p>
+                    <p className="my-8">As you can see, the first UI element is practically unchanged, but the second is completely different.
+                    You can imagine how this must impact somebody exploring the web when contrast isn&apos;t taken into account at all.</p>
 
-                    {/* Color Contrast Tips */}
-                    <ul className="px-8">
-                        <li className="my-4">
-                            <span className="font-bold bg-purple text-bgGray p-1.5 rounded">1.</span> Use sufficient contrast between text and background colors to ensure readability.
-                        </li>
-                        <li className="my-4">
-                            <span className="font-bold bg-purple text-bgGray p-1.5 rounded">2.</span> Check color contrast ratios to comply with accessibility standards (e.g., WCAG guidelines).
-                        </li>
-                        <li className="my-4">
-                            <span className="font-bold bg-purple text-bgGray p-1.5 rounded">3.</span> Avoid relying solely on color to convey important information; use additional visual cues or text labels.
-                        </li>
-                        <li className="my-4">
-                            <span className="font-bold bg-purple text-bgGray p-1.5 rounded">4.</span> Test color combinations for common color vision deficiencies to ensure inclusivity.
-                        </li>
-                        <li className="my-4">
-                            <span className="font-bold bg-purple text-bgGray p-1.5 rounded">5.</span> Consider using high-contrast themes or providing customizable color options for users with specific needs.
-                        </li>
-                    </ul>
+                    <p className="my-8">Users with impaired contrast sensitivity issues are especially subjected to these design (in)decisions,
+                    leaving some elements completely imperceivable.</p>
 
-                    <p className="my-8">
-                        Ensuring proper color contrast is not only an accessibility requirement but also contributes to a better overall design aesthetic. It enhances visibility,
-                        reduces eye strain, and creates a more enjoyable experience for all users.
-                    </p>
-
-                    {/* Examples and Demonstrations */}
-                    <div className="bg-darkerGray p-6 rounded-md">
-                        <p className="mb-4 font-bold text-purple">Example: Adequate Color Contrast</p>
-                        <div className="bg-white text-black p-4 rounded">
-                            <p>Sample Text</p>
-                        </div>
-                    </div>
-
-                    <div className="bg-darkerGray p-6 rounded-md mt-8">
-                        <p className="mb-4 font-bold text-purple">Example: Insufficient Color Contrast</p>
-                        <div className="bg-white text-white p-4 rounded">
-                            <p>Sample Text</p>
-                        </div>
-                    </div>
-
-                    <p className="my-8">
-                        Test and evaluate your color choices to ensure that your design meets accessibility standards and provides an inclusive experience for all users.
-                    </p>
+                    <p className="my-8">There are tons of developer tools you can use to check t    he contrast ratios of your UI elements. Whether it be
+                     browser extensions like <a className="underline text-purple" href="https://addons.mozilla.org/en-US/firefox/addon/wcag-contrast-checker/">WCAG Color Contrast Checker for Firefox</a> which scans your current page and provides a report on
+                    failing elements, or tools built into Chrome&apos;s Developer Tools like <a className="underline text-purple" href="https://developer.chrome.com/docs/lighthouse/overview">Lighthouse</a>, there are countless
+                    ways to ensure that your UI is perceivable by everyone using it!</p>
 
                     <p className="my-8">
                         For more detailed information on color contrast guidelines and tools, refer to the <a className="underline text-purple" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum">WCAG guidelines on color contrast</a>.

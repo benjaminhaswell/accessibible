@@ -36,9 +36,10 @@ h1 {
   }
 }
 
+/* TODO */
 @media (prefers-color-scheme: dark) {
   :root {
-    color: #FFFFFF;
-    background-color: #213547;
+    color: #213547;
+    background-color: #f8f8f8;
   }
 }

@@ -194,7 +194,7 @@ function Keyboard() {
                         intended destinations, and the &apos;button&apos; still does something thanks to an onlick listener.</p>
 
                     <p className="my-8">This kind of behavior can be found on many websites across the internet which don&apos;t take
-                        keyboard accessibility into account when designing their UI.</p>
+                        keyboard accessibility into account when designing their UI and instead focus on aesthetics and basic functionality.</p>
 
                     <p className="my-8">Generally, the more &apos;custom&apos; an element is, the less likely it is that the element will be
                         keyboard accessible. There are ways to definitively make custom elements (like &lt;div&gt; buttons) keyboard accessible, most
