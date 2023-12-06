@@ -23,8 +23,8 @@ function App() {
 
       {/* Cards */}
       <div className="flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-4 mt-12">
-        <PageCard name="Keyboard" iconPath="./assets/keyboardIcon.png" iconAlt='Keyboard Icon from Icons8.com' />
-        <PageCard name="Color Contrast" iconPath="./assets/contrastIcon.png" iconAlt='Color Contrast Icon from Icons8.com' />
+        <PageCard name="Keyboard" path="keyboard" iconPath="./assets/keyboardIcon.png" iconAlt='Keyboard Icon from Icons8.com' />
+        <PageCard name="Color Contrast" path="contrast" iconPath="./assets/contrastIcon.png" iconAlt='Color Contrast Icon from Icons8.com' />
       </div>
     </>
   )

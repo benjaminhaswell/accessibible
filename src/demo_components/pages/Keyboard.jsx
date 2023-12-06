@@ -3,6 +3,8 @@ import { useState } from 'react';
 
 function Keyboard() {
 
+    document.title = 'AccessiBible - Keyboard'
+
     const [showMessage1, setShowMessage1] = useState(false);
     const [showMessage2, setShowMessage2] = useState(false);
 

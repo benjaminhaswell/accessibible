@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
-function PageCard({ name, iconPath, iconAlt }) {
+function PageCard({ name, path, iconPath, iconAlt }) {
 
     // For link
-    let path = "/" + name.toLowerCase();
+    // let path = "/" + name.toLowerCase();
 
   return (
     <>
@@ -17,6 +17,7 @@ function PageCard({ name, iconPath, iconAlt }) {
 
 PageCard.propTypes = {
   name: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
   iconPath: PropTypes.string.isRequired,
   iconAlt: PropTypes.string.isRequired,
 };

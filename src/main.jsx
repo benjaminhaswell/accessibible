@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './demo_components/App.jsx'
 import './index.css'
 import ErrorPage from './demo_components/ErrorPage.jsx'
+import ColorContrast from './demo_components/pages/ColorContrast.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/keyboard",
     element: <Keyboard/>
+  },
+  {
+    path: "/contrast",
+    element: <ColorContrast/>
   }
 ]);
 
