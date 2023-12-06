@@ -9,6 +9,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Keyboard from './demo_components/pages/Keyboard.jsx';
+import AltText from './demo_components/pages/AltText.jsx'
 
 // Declare routes
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/contrast",
     element: <ColorContrast/>
+  },
+  {
+    path: "/alt-text",
+    element: <AltText/>
   }
 ]);
 
