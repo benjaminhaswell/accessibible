@@ -2,26 +2,37 @@
 
 ## Overview
 
-Ensuring your web applications are accessible to all users is not only a good practice but also a legal requirement in many regions. Fortunately, there are several developer tools that can assist you in implementing and testing accessibility features. This guide provides a comprehensive list of tools categorized by their specific functionalities.
+This serves as a comprehensive list of tools you can use that make implementing accessibility into your projects easier!
 
 ## Table of Contents
 
-1. [Color Contrast Tools](#color-contrast-tools)
-2. [Screen Reader Testing](#screen-reader-testing)
-3. [Keyboard Navigation](#keyboard-navigation)
-4. [HTML and ARIA Validation](#html-and-aria-validation)
-5. [Focus Management](#focus-management)
-6. [Performance Audits](#performance-audits)
+1. [General Tools](#general-tools)
+2. [Color Contrast Tools](#color-contrast-tools)
+3. [Screen Reader Testing](#screen-reader-testing)
+4. [Keyboard Navigation](#keyboard-navigation)
+5. [HTML and ARIA Validation](#html-and-aria-validation)
+6. [Focus Management](#focus-management)
+7. [Performance Audits](#performance-audits)
+
+## General Tools
+- [WAVE Evaluation Tool](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh): Visual Chrome Extension built by WebAIM for scanning current page and highlighting accessibility violations.
+- [Axe-Core](https://github.com/dequelabs/axe-core): All-in-one accessibility testing engine by DequeLabs.
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview): Automated auditor for accessibility, performance, SEO, and more built into Google Chrome's Dev Tools.
+- [Axe Accessibility Linter](https://www.deque.com/axe/devtools/linter/): VS Code Extension for scanning for accessibility defects in React (JSX), React Native, Angular, Vue, HTML, and Markdown files.
 
 ## Color Contrast Tools
 
+- [WCAG Contrast Checker Chrome Extension](https://chromewebstore.google.com/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf): Chrome extension that scans your current page and audits contrast ratios for visible and invisible elements. There is also a [Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/wcag-contrast-checker/) counterpart.
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/): Calculate contrast ratios between two colors and ensure they meet accessibility standards.
+- [High Contrast Checker Chrome Extension](https://chromewebstore.google.com/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph?hl=en): Test your UI against various high contrast filters.
+  
 
 ## Screen Reader Testing
 
 - [NVDA (NonVisual Desktop Access)](https://www.nvaccess.org/): A free, open-source screen reader for Windows.
 - [VoiceOver](https://www.apple.com/accessibility/mac/vision/): Built-in screen reader for macOS and iOS devices.
 - [JAWS (Job Access With Speech)](https://www.freedomscientific.com/products/software/jaws/): A popular commercial screen reader for Windows.
+- [Android Talkback](https://support.google.com/accessibility/android/answer/6283677?hl=en): Built in screen reader for Android devices developed by Google.
 
 ## Keyboard Navigation
 
