@@ -51,7 +51,7 @@ function ColorContrast() {
                     </div>
 
                     <p className="my-8">As you can see, the first UI element is practically unchanged, but the second is completely different.
-                    You can imagine how this must impact somebody exploring the web when contrast isn&apos;t taken into account at all.</p>
+                    You can imagine how this must impact somebody&apos;s experience exploring the web when contrast isn&apos;t taken into account at all.</p>
 
                     <p className="my-8">Users with impaired contrast sensitivity issues are especially subjected to these design (in)decisions,
                     leaving some elements completely imperceivable.</p>
