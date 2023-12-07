@@ -21,7 +21,7 @@ Contributions are more than welcome! Share your knowledge and this repository wi
 ## Web Accessibility Overview
 Web accessibility ensures that everybody, regardless of ability can perceive, understand, navigate, and interact with the web.
 
-### Common Accessibility Violations/Examples
+### Five Most Common Accessibility Violations/Examples
 
 > #### 1. Keyboard Functionality
 > 
@@ -43,4 +43,4 @@ Web accessibility ensures that everybody, regardless of ability can perceive, un
 > 
 > Form inputs and other elements have labels which indicate the information needed for that particular field. Many users, particularly screen reader users, rely on these labels to understand the forms and their required information.
 
-These are just a few of the _many_ examples when it comes to inaccessible web pages. For a full reference on accessibility guidelines, provided by the [World Wide Web Consortium (W3C)](https://www.w3.org/WAI/WCAG22/quickref/), visit the current [Web Content Accessibility Guidelines (WCAG) Quick Reference.](https://www.w3.org/WAI/WCAG22/quickref/)
+These are just five of the _many_ examples when it comes to inaccessible web pages. For a full reference on accessibility guidelines, provided by the [World Wide Web Consortium (W3C)](https://www.w3.org/WAI/WCAG22/quickref/), visit the current [Web Content Accessibility Guidelines (WCAG) Quick Reference.](https://www.w3.org/WAI/WCAG22/quickref/)
