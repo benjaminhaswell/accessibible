@@ -19,12 +19,15 @@ This serves as a comprehensive list of tools you can use that make implementing 
 - [Axe-Core](https://github.com/dequelabs/axe-core): All-in-one accessibility testing engine by DequeLabs.
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview): Automated auditor for accessibility, performance, SEO, and more built into Google Chrome's Dev Tools.
 - [Axe Accessibility Linter](https://www.deque.com/axe/devtools/linter/): VS Code Extension for scanning for accessibility defects in React (JSX), React Native, Angular, Vue, HTML, and Markdown files.
+- [A11y Audit Bookmarklets](https://a11y-tools.com/bookmarklets/): Collection of accessibility-focused bookmarklets for all kinds of needs.
 
 ## Color Contrast Tools
 
 - [WCAG Contrast Checker Chrome Extension](https://chromewebstore.google.com/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf): Chrome extension that scans your current page and audits contrast ratios for visible and invisible elements. There is also a [Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/wcag-contrast-checker/) counterpart.
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/): Calculate contrast ratios between two colors and ensure they meet accessibility standards.
 - [High Contrast Checker Chrome Extension](https://chromewebstore.google.com/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph?hl=en): Test your UI against various high contrast filters.
+- [Accessible Color Palette Picker](https://toolness.github.io/accessible-color-matrix/): Build custom accessible color palettes.
+- [Hex Naw](https://hexnaw.com/): Test color palette/system against WCAG standards.
   
 
 ## Screen Reader Testing
