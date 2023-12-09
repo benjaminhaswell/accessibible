@@ -94,17 +94,18 @@ function Keyboard() {
                                 </li>
                             </ul>
                         </nav>
-                        <label htmlFor="username" className="block">Username:</label>
+                        <label htmlFor="usernameOne" className="block">Username:</label>
                         <input
                             type="text"
-                            id="username"
+                            id="usernameOne"
                             className="text-black px-4 py-2 rounded outline-purple"
+                            autoComplete="off"
                         />
                         <br />
-                        <label htmlFor="fruits">Favorite fruit:</label>
+                        <label htmlFor="fruitsOne">Favorite fruit:</label>
                         <select
-                            name="fruits"
-                            id="fruits"
+                            name="fruitsOne"
+                            id="fruitsOne"
                             className="block w-full outline-purple py-2 px-4 rounded"
                         >
                             <option value="volvo">Apple</option>
@@ -145,17 +146,18 @@ function Keyboard() {
                                 </li>
                             </ul>
                         </nav>
-                        <label htmlFor="username" className="block">Username:</label>
+                        <label htmlFor="usernameTwo" className="block">Username:</label>
                         <input
                             type="text"
-                            id="username"
+                            id="usernameTwo"
                             className="text-black px-4 py-2 rounded outline-purple"
+                            autoComplete="off"
                         />
                         <br />
-                        <label htmlFor="fruits">Favorite fruit:</label>
+                        <label htmlFor="fruitsTwo">Favorite fruit:</label>
                         <select
-                            name="fruits"
-                            id="fruits"
+                            name="fruitsTwo"
+                            id="fruitsTwo"
                             className="block w-full outline-purple py-2 px-4 rounded"
                         >
                             <option value="volvo">Apple</option>
