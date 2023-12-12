@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Keyboard from './demo_components/pages/Keyboard.jsx';
 import AltText from './demo_components/pages/AltText.jsx'
+import FocusIndicator from './demo_components/pages/FocusIndicator.jsx'
 
 // Declare routes
 const router = createBrowserRouter([
@@ -29,7 +30,11 @@ const router = createBrowserRouter([
   {
     path: "/alt-text",
     element: <AltText/>
-  }
+  },
+  {
+    path: "/focus",
+    element: <FocusIndicator/>
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

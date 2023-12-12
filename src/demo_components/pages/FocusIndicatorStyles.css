@@ -1,0 +1,4 @@
+#styledBtn:focus-visible {
+    outline: 8px dashed black;
+    border-radius: 0px;
+}

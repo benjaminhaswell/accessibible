@@ -108,10 +108,10 @@ function Keyboard() {
                             id="fruitsOne"
                             className="block w-full outline-purple py-2 px-4 rounded"
                         >
-                            <option value="volvo">Apple</option>
-                            <option value="saab">Banana</option>
-                            <option value="mercedes">Orange</option>
-                            <option value="audi">Pineapple</option>
+                            <option value="apple">Apple</option>
+                            <option value="banana">Banana</option>
+                            <option value="orange">Orange</option>
+                            <option value="pineapple">Pineapple</option>
                         </select>
                         <button onClick={handleClick1}
                             className="text-white px-4 py-2 rounded bg-purple mt-4">Click me!</button>
@@ -160,10 +160,10 @@ function Keyboard() {
                             id="fruitsTwo"
                             className="block w-full outline-purple py-2 px-4 rounded"
                         >
-                            <option value="volvo">Apple</option>
-                            <option value="saab">Banana</option>
-                            <option value="mercedes">Orange</option>
-                            <option value="audi">Pineapple</option>
+                            <option value="apple">Apple</option>
+                            <option value="banana">Banana</option>
+                            <option value="orange">Orange</option>
+                            <option value="pineapple">Pineapple</option>
                         </select>
                         <div className="flex flex-row items-center">
 

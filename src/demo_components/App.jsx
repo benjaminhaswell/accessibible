@@ -26,6 +26,7 @@ function App() {
         <PageCard name="Keyboard" path="keyboard" iconPath="./assets/keyboardIcon.png" iconAlt='Keyboard Icon from Icons8.com' />
         <PageCard name="Color Contrast" path="contrast" iconPath="./assets/contrastIcon.png" iconAlt='Color Contrast Icon from Icons8.com' />
         <PageCard name="Alt Text" path="alt-text" iconPath="./assets/altIcon.png" iconAlt='Alt Text Icon from Icons8.com' />
+        <PageCard name="Focus Indicator" path="focus" iconPath="./assets/focusIndicator.png" iconAlt='Focus Icon from Icons8.com'/>
 
       </div>
     </>

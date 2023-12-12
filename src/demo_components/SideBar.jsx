@@ -11,6 +11,8 @@ function SideBar({ activeLink }) {
       <a href="/keyboard" className={`my-2 hover:underline ${activeLink === 'keyboard' ? 'text-purple' : ''}`}>Keyboard</a>
       <a href="/contrast" className={`my-2 hover:underline ${activeLink === 'contrast' ? 'text-purple' : ''}`}>Color Contrast</a>
       <a href="/alt-text" className={`my-2 hover:underline ${activeLink === 'alt-text' ? 'text-purple' : ''}`}>Alt Text</a>
+      <a href="/focus" className={`my-2 hover:underline ${activeLink === 'focus' ? 'text-purple' : ''}`}>Focus Indicator</a>
+
 
 
 
