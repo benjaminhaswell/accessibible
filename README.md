@@ -1,6 +1,10 @@
 # AccessiBible
 
-![image](https://github.com/benjaminhaswell/accessibible/assets/134734614/1110f638-1460-4376-b74f-92940bc34acd)
+<!-- ![image](https://github.com/benjaminhaswell/accessibible/assets/134734614/1110f638-1460-4376-b74f-92940bc34acd) -->
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/benjaminhaswell/accessibible/main/public/logos/1x.png" alt="Accessibible Logo"/>
+</p>
 
 
 ## Overview
