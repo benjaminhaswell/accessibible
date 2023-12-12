@@ -94,6 +94,19 @@ function FocusIndicator() {
                     this means it needs to follow the standard western convention of reading from <strong>top left to bottom right</strong>,
                     but this could vary depending on the interface.</p>
 
+                <p className="my-8">Most of the time setting <strong>tabindex</strong> to 0 will solve focus problems,
+                    but in the case that it doesn&apos;t you can set it to a positive value to directly alter the focus order. This is <strong>
+                        highly
+                        unadvisable
+                    </strong> because it will also override the default tabbing order, so you&apos;d have to manually change
+                    the tabindex value of all focusable elements in the desired focus order (1, 2, 3, etc.).</p>
+
+                <p className="my-8">If you need to prevent focus of an element, you can <strong>set it to a negative value </strong>
+                    (usually -1)</p>
+
+                <p className="my-8">Bottom line, test your webpages with keyboard controls and make sure the focus indicator
+                    is visible on all focusable elements, styling as necessary.</p>
+
             </div>
         </>
     );
