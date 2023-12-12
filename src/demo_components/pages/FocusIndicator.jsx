@@ -72,6 +72,28 @@ function FocusIndicator() {
                         Click Me For Good Luck
                     </button>
                 </div>
+
+                <p className="my-8">Use the <strong>focus-visible</strong> pseudo-class to make sure your UI
+                    elements are clear and visible (and <a className="underline text-purple" href="https://webaim.org/resources/contrastchecker/">make sure they conform to contrast guidelines</a>).</p>
+
+                <p className="my-8">As discussed in the keyboard demonstration, most HTML elements come
+                    default with pretty good focus indicators; depending on your page content and color schemes
+                    you may need to modify the focus indicator for respective elements, but 8/10 times
+                    it <em>should</em> be fine, <strong>test it anyway</strong>.</p>
+
+                <p className="my-8">Where the property really shines is in the case that you are using
+                    unorthodox elements like &lt;div&gt; elements for buttons or &lt;span&gt; elements for links.
+                    With <strong>tabindex</strong> values of 0, usually these elements have poor default focus
+                    indicators since they&apos;re such generic tags. Applying custom styles to the focus indicators
+                    of these elements are crucial to ensuring usability for all.</p>
+
+                <p className="my-8">Another key component of focus on webpages is <strong>focus order</strong>; the order
+                    that the focus indicator follows when navigating through a page.</p>
+
+                <p className="my-8">WCAG declares that the focus order of a page needs to be logical. In most cases
+                    this means it needs to follow the standard western convention of reading from <strong>top left to bottom right</strong>,
+                    but this could vary depending on the interface.</p>
+
             </div>
         </>
     );
