@@ -1,5 +1,8 @@
 # AccessiBible
 
+![image](https://github.com/benjaminhaswell/accessibible/assets/134734614/1110f638-1460-4376-b74f-92940bc34acd)
+
+
 ## Overview
 AccessiBible is a living and breathing accessibility bible for web developers, providing a centralized reference for learning about web accessibility. The repository includes:
 
@@ -8,7 +11,13 @@ AccessiBible is a living and breathing accessibility bible for web developers, p
 
 All other files (including those in `src` and `public` are project files for the demonstrations application, which you can access by cloning the repository, installing dependencies and running the build scripts.
 
-## How to Contribute
+## How to Install the Demonstrations Application
+1. Clone the repository to your machine: `git clone https://github.com/benjaminhaswell/accessibible.git`
+2. Run `npm install` to install all dependencies for the app.
+3. Finally, run `npm run dev` to run the application on your local host.
+4. Access the application at `http://localhost:5173/`
+
+## How to Contribute to AccessiBible
 1. Fork the repository.
 2. Clone your fork: `git clone https://github.com/benjaminhaswell/accessibible.git`
 3. Create a new branch: `git checkout -b feature/your-feature`
